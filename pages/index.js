@@ -30,7 +30,7 @@ export default function Home() {
     return (
       <div>
         {/* Texto "Eu te amo mãe" centralizado no meio */}
-        <div className="heart-text">Eu te amo pai!</div>
+        <div className="heart-text">Eu te amo Mana!</div>
       </div>
     );
   }
