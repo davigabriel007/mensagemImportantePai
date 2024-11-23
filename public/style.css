@@ -1,0 +1,112 @@
+/* Estilo do coração */
+.heart {
+  font-size: 2rem;        /* Tamanho maior para o emoji */
+  position: absolute;     /* Necessário para a animação */
+  animation: bounce 0.5s infinite, fall 3s infinite; /* Animação de pulo + queda */
+  display: inline-block;
+  pointer-events: none;   /* Para que os corações não interfiram nos cliques */
+}
+
+/* Animação de pulo (bounce) */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);  /* Posição inicial e final do pulo */
+  }
+  50% {
+    transform: translateY(-10px);  /* Pulo para cima */
+  }
+}
+
+/* Animação de queda (fall) */
+@keyframes fall {
+  0% {
+    top: -10%;  /* Começa fora da tela, na parte superior */
+  }
+  100% {
+    top: 100%;  /* Desce até a parte inferior da tela */
+  }
+}
+
+/* Estilo do texto "Eu te amo mãe" */
+.heart-text {
+  font-size: 3rem;          /* Texto maior */
+  font-weight: bold;        /* Negrito */
+  color: pink;              /* Cor do texto */
+  position: fixed;          /* Fixo no centro da tela */
+  top: 50%;                 /* Centraliza verticalmente */
+  left: 50%;                /* Centraliza horizontalmente */
+  transform: translate(-50%, -50%);  /* Ajusta o posicionamento exato */
+  text-align: center;       /* Alinhar o texto no meio */
+  z-index: 10;              /* Coloca o texto acima dos corações */
+  pointer-events: none;     /* Para que o texto não interfira nos cliques */
+}
+/* Estilo do texto "Eu te amo mãe" */
+.heart-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: pink;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+
+  animation: pulse 1.5s infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+/* Animação de brilho */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: black; 
+  background-size: 400% 400%;
+  position: relative;
+}
+
+.heart-text {
+  font-size: 3rem;
+  font-weight: bold;
+  color: pink;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+  animation: pulse 1.5s infinite;
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
