@@ -31,7 +31,7 @@
 .heart-text {
   font-size: 3rem;          /* Texto maior */
   font-weight: bold;        /* Negrito */
-  color: pink;              /* Cor do texto */
+  color: blue;              /* Cor do texto */
   position: fixed;          /* Fixo no centro da tela */
   top: 50%;                 /* Centraliza verticalmente */
   left: 50%;                /* Centraliza horizontalmente */
@@ -44,7 +44,7 @@
 .heart-text {
   font-size: 3rem;
   font-weight: bold;
-  color: pink;
+  color: blue;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -90,7 +90,7 @@ body {
 .heart-text {
   font-size: 3rem;
   font-weight: bold;
-  color: pink;
+  color: rgb(187, 61, 22);
   position: fixed;
   top: 50%;
   left: 50%;
